@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Uterine Cervical Cancer Database (UCCD)</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Signal Processing for Computational Intelligence Group">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/social-buttons.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="jumbotron subhead" id="overview">
+            <p class="lead"> Istanbul Technical University </p>
+            <h1>Signal Processing for Computational Intelligence Group</h1>
+        </header>
+       <div class="masthead">
+            <div class="navbar">
+                <div class="navbar-inner">
+                     <div class="toggle">
+                <div class="menu" id='menus' onclick="myFunction();">
+                    <i class="fa fa-bars"></i></div>
+            </div>
+                    <div class="container">
+                        <ul class="nav" id=navi>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="people.html">People</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            <li><a href="publications.html">Publications</a></li>
+                            <!--                        <li><a href="gallery.html">Gallery</a></li>-->
+                            <!--                        <li><a href="news.html">News</a></li>-->
+                            <!--                        <li><a href="teaching.html">Teaching</a></li>-->
+                            <li class="active"><a href="#">Datasets</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+                <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                    <li><a href="#motivation"> Motivation</a></li>
+                    <li><a href="#description"> Dataset Description</a></li>
+                    <li><a class="subhead" href="#slide"> Slide Lesion and Small Epitelium Pieces </a></li>
+                    <li><a class="subhead" href="#ground"> Ground Truth </a></li>
+                    <!--                  <li><a class="subhead" href="#2017"> 2017 </a></li>-->
+                    <li><a href="#conclusion"> Conclusion</a></li>
+                    <li><a href="#request"> Request the dataset</a></li>
+
+                </ul>
+            </div>
+            <div class="span8 offset1">
+                <br>
+                <h1 class="text-left"> <strong> Uterine Cervical Cancer Database   </strong> </h1>
+
+
+                <section id="motivation">
+                    <div class="page-header">
+                        <h3>Motivation</h3>
+                    </div>
+                    <p class="text-center"><img class="img-fluid" src="images/intro.svg" alt="" width="700" height="350"></p>
+                    <br>
+                    <p>
+                        Cervical cancer caused by Human Papilloma Virus (HPV) is one of the preventable cancers with the help of periodic screening. Thanks to early diagnosis, many patients can survive and regain their health. It is very important to evaluate the Hematoxylin and Eosin (H&E) digital histopathology images used during these scans. At this point, the accuracy of the diagnosis can change the course of treatment. The development of AI systems that can assist pathologists in the diagnosis process has gained great importance. Based on this, we reveal a data set consisting of large-scale H&E images available to researchers worldwide. We hope that the methods developed through this data set can cover beautiful milestones for many helpful diagnoses.
+                    </p>
+                </section>
+
+                <section id="description">
+                    <div class="page-header">
+                        <h3>Description</h3>
+                    </div>
+                    <p class="text-center"><img class="img-fluid" src="images/whole_slide.svg" alt="dasdsafga " width="1000" height="350"></p>
+                    <p>
+                        In our data set study, <strong>128</strong> whole slides obtained from 54 patients in the pathology laboratory of IMU Hospital were scanned with high resolution. Images were painted with HE Ki67 and p16 immunohistochemical stains. Digital images obtained under x20 and x40 optical zoom were recorded in TIFF format without any compression. The dimensions of the whole slide images range from <strong>7,500x7,700</strong> to <strong>55,700x165,000</strong>. The whole slide images are difficult to process. There may be lesions of more than one class on a slide. For this reason, lesions were separated from the whole slide images (a). In addition, each lesion (b) was divided into small pieces and Small Epithelial Pieces (SEP) (c) were created. Our data set contains a total of <strong>128</strong> whole slides, <strong>350</strong> lesions and <strong>957</strong> SEP images.
+                    </p>
+                    <p>
+                        The diagnosis for each lesion and SEP is given according to the CIN system. Diagnoses exist as independent diagnoses of two pathologists. In cases where they were unstable with pathologists, they presented another third diagnosis on Ki67 and p16 for consensus. Thus, our data set contains inter-observer variabilty. A way was followed in indexing digital images: Whole Slide Name (WSN)
+                    </p>
+
+                </section>
+
+                <section id="slide">
+                    <div class="page-header">
+                        <h3>Slide Lesion and Small Epitelium Pieces</h3>
+                    </div>
+                    <p>TBA</p>
+                    <p class="text-center"><img class="img-fluid" src="images/dataset6.png" alt=""></p>
+                    <p>TBA</p>
+                    <p class="text-center"><img class="img-fluid" src="images/dataset7.png" alt=""></p>
+                </section>
+
+                <section id="ground">
+                    <div class="page-header">
+                        <h3>Ground Truth</h3>
+                    </div>
+                    <p>TBA</p>
+                    <p> TBA </p>
+                    <br>
+                </section>
+
+                <section id="conclusion">
+                    <div class="page-header">
+                        <h3>Conclusion</h3>
+                    </div>
+
+                    <p>The authors would appreciate if you could cite their work if you use our dataset.</p>
+                    <pre class='bibtex'>
+                    @article{albayrak,
+                    title={A Whole Slide Image Grading Benchmark and Tissue Classification for Cervical Cancer Precursor Lesions with Inter-Observer Variability},
+                    author={Albayrak, Abdulkadir and Unlu, Asli and Calik, Nurullah and Capar, Abdulkerim and Bilgin, Gokhan and Toreyin, Behcet Ugur and Muezzinoglu, Bahar and Turkmen, Ilknur and Durak-Ata, Lutfiye},
+                    journal= 
+                    year= 
+                    }
+                </pre>
+                </section>
+
+                <section id="request">
+
+                    <div class="masthead">
+                        <div class="navbar">
+                            <div class="navbar-inner">
+                                <div class="container">
+                                    <a href="request.html" class="list-group-item list-group-item-action bg-light">
+                                        <h3 class="text-center"> <strong>Request the dataset</strong> </h3></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span5">
+                    <h3>Contact Information</h3>
+                    <p><b>Office Hours: </b>Monday-Friday (8.00am - 5.00pm)</p>
+                    <p><b>Phone: </b>+90-212-2857392</p>
+                    <a href="mailto:spacing@itu.edu.tr,toreyin@itu.edu.tr" >Email Us</a>
+                </div>
+                <div class="span2">
+                    <a href="index.html"><img src="images/Resimnew.png" alt="research-lab-logo" /></a>
+                </div>
+                <div class="span5">
+                    <h3>Address</h3>
+                    <p>Sp4cing Research Group
+                        <br> İTÜ Ayazağa Kampüsü
+                        <br> Sariyer, Istanbul
+                        <br> Turkey 34467
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navi");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        };
+    </script>
+
+</body>
+
+</html>

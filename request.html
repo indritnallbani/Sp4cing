@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Uterine Cervical Cancer Database (UCCD)</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signal Processing for Computational Intelligence Group">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/social-buttons.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="jumbotron subhead" id="overview">
+            <p class="lead"> Istanbul Technical University </p>
+            <h1>Signal Processing for Computational Intelligence Group</h1>
+        </header>
+        <div class="masthead">
+            <div class="navbar">
+                <div class="navbar-inner">
+                     <div class="toggle">
+                <div class="menu" id='menus' onclick="myFunction();">
+                    <i class="fa fa-bars"></i></div>
+            </div>
+                    <div class="container">
+                        <ul class="nav" id=navi>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="people.html">People</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            <li><a href="publications.html">Publications</a></li>
+                            <!--                        <li><a href="gallery.html">Gallery</a></li>-->
+                            <!--                        <li><a href="news.html">News</a></li>-->
+                            <!--                        <li><a href="teaching.html">Teaching</a></li>-->
+                            <li class="active"><a href="#">Datasets</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <h1 class="text-center"> <strong> Uterine Cervical Cancer Database   </strong> </h1>
+            <div class="masthead">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container">
+                            <a href="datasets.html" class="list-group-item list-group-item-action bg-light">
+                                <h3 class="text-center"> <strong>Go Back</strong> </h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+                 <form action="request.php" method="post">
+
+
+                <div class="row1">
+                    <div class="col-25-1">
+                        <label for="name">Full name:</label>
+                    </div>
+                    <div class="col-75-1">
+                        <input type="text" id="name" name="name" placeholder="Your name and surname...">
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="col-25-1">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col-75-1">
+                        <input type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="col-25-1">
+                        <label for="email">Affiliation:</label>
+                    </div>
+                    <div class="col-75-1">
+                        <input type="text" id="affiliation" name="affiliation" placeholder="Your affiliation..">
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="col-25-1">
+                        <label for="subject">Adress:</label>
+                    </div>
+                    <div class="col-75-1">
+                        <textarea id="addres" name="addres" placeholder="Your adress.." style="height:50"></textarea>
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="col-25-1">
+                        <label for="subject">Reason for request:</label>
+                    </div>
+                    <div class="col-75-1">
+                        <textarea id="message" name="message" placeholder="Write your message.." style="height:70"></textarea>
+                    </div>
+                </div>
+                <div class="row1">
+                    <button type="submit" name="submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- /#page-content-wrapper -->
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span5">
+                    <h3>Contact Information</h3>
+                    <p><b>Office Hours: </b>Monday-Friday (8.00am - 5.00pm)</p>
+                    <p><b>Phone: </b>+90-212-2857392</p>
+                    <a href="mailto:spacing@itu.edu.tr,toreyin@itu.edu.tr" >Email Us</a>
+                </div>
+                <div class="span2">
+                    <a href="index.html"><img src="images/Resimnew.png" alt="research-lab-logo" /></a>
+                </div>
+                <div class="span5">
+                    <h3>Address</h3>
+                    <p>Sp4cing Research Group
+                        <br> İTÜ Ayazağa Kampüsü
+                        <br> Sariyer, Istanbul
+                        <br> Turkey 34467
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navi");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        };
+    </script>
+
+</body>
+
+</html>

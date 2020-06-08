@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Research</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signal Processing for Computational Intelligence Group">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="jumbotron subhead" id="overview">
+            <p class="lead"> Istanbul Technical University </p>
+            <h1>Signal Processing for Computational Intelligence Group
+</h1>
+        </header>
+
+        <div class="masthead">
+            <div class="navbar">
+                <div class="navbar-inner">
+                     <div class="toggle">
+                <div class="menu" id='menus' onclick="myFunction();">
+                    <i class="fa fa-bars"></i></div>
+            </div>
+                    <div class="container">
+                        <ul class="nav" id=navi>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="people.html">People</a></li>
+                            <li class="active"><a href="#">Research</a></li>
+                            <li><a href="publications.html">Publications</a></li>
+                            <!--                        <li><a href="gallery.html">Gallery</a></li>-->
+                            <!--                        <li><a href="news.html">News</a></li>-->
+                            <!--                        <li><a href="teaching.html">Teaching</a></li>-->
+                            <li><a href="datasets.html">Datasets</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+                <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                    <li><a href="#statemet"> Our Mission </a></li>
+                    <li><a href="#nano"> Unusual Event Detection </a></li>
+                    <li><a href="#Smoke">Smoke Detection in Compressed Video</a></li>
+                    <li><a href="#Digital">Digital Pathology</a></li>
+                    <li><a href="#Bap">Classification of the Cervical Precursor Lesions
+                        via Local Histogram and Nuclei Density Features</a></li>
+                    <li><a href="#learning">Continual Learning</a></li>
+                    <li><a href="#Hyperspectral">Hyperspectral Data Analysis / Compression</a></li>
+                    
+                     <li><a href="#super">Image Super Resolution</a></li>
+                    <li><a href="#compression">Model Compression </a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="span8 offset1">
+                <section id="statemet">
+                    <div class="page-header">
+                        <h3>Our Mission</h3>
+                        <hr>
+                        <p>At SP4CING, we are developing signal processing techniques for various computational intelligence applications, ranging from environmental monitoring to bio-image analysis. We are part of Informatics Institute, İstanbul Technical University. For further information, please contact us </p>
+                    </div>
+                </section>
+                <section id="nano">
+                    <div class="page-header">
+                        <h3>Unusual Event Detection</h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="nano">
+                                <br/>
+                                <img src="img/unusual_event.png" class="float-right" alt="nano" width=7 0%>
+                                <p>
+                                    We develop algorithms to analyze contents of and compress signals from multitude sensors such as Visible/IR/Hyperspectral cameras, microphones, passive IR sensors, vibration sensor and spectrum sensors. We developed algorithms for hyperspectral data compression, forest fire, flame/smoke, volatile organic compound, falling person detection in video etc.
+                                    <br>
+                                    <a href="https://www.sciencedirect.com/book/9780128023990/methods-and-techniques-for-fire-detection">  See book on Fire Detection</a>
+                            </section>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                <section id="Smoke">
+                    <div class="page-header">
+                        <h3>Smoke Detection in Compressed Video</h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="Smoke">
+                                <br/>
+                                <img src="img/smoke.jpg" class="float-right" alt="Smoke" width="70%">
+                                <p>
+                                    This project proposes a Markov model and wavelet transform based technique to further improve the current state-of-the-art methods for video smoke detection by detecting signs of smoke existence in the MJPEG2000 compressed video. Existing video-based methods have been developed for the analysis of uncompressed spatio-temporal sequences and are not appropriate for compressed video formats. Working with compressed video formats reduce the number of coefficients, make it suitable for parallel processing and paves the way for real-time processing which brings technical improvement in the field of video analysis. The proposed method is an appropriate alternative for traditional detection methods such as point and volumetric detectors and some of the computer vision-based approaches. For instance, point detectors do not help on large and spacious covered places; in the same manner of disadvantage, volumetric detectors issues alarm when they «see» smoke within their viewing ranges. The proposed method has applied on mostly home-made sequences as an initial result, and it will be carried out on the larger dataset in further works.
+
+                                    <br>
+                                    <br>
+                                    <a href="pdf/smokedetection.pdf" target="_blank">A presentation on smoke detection given at Purdue University.</a>
+
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                <section id="Digital">
+                    <div class="page-header">
+                        <h3>Digital Pathology</h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="Digital">
+                                <br/>
+                                <img src="img/digitalpathology.png" class="float-right" alt="Smoke" width="70%">
+                                <p>
+                                    We analyze tissue samples on a cellular basis where each cell is identified using membrane based feature extraction and classification methods.
+                                    An importat research on this topic is myelin qualification in flourescent microscopic images.
+                                    Myelin sheath, wrapped around axons, allows rapid neural signal transmission, and degeneration of myelin causes various neurodegenerative diseases, such as, Multiple Sclerosis (MS). For candidate drug discovery, it is essential to quantify myelin. This requires tedious expert labor comprising myelin labelling on microscopic fluorescence images, usually acquired by confocal microscopes. Detecting and quantifying myelin by using machine learning is the aim of this project.
+                                    <br>
+                                    <br>
+                                    <a href="pdf/cells.pdf" target="_blank">Our poster on calcium signaling analysis for ALS diagnosis.</a>
+                                </p>
+
+                            </section>
+
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                  <section id="Bap">
+                    <div class="page-header">
+                        <h3>Classification of the Cervical Precursor Lesions via Local Histogram and Nuclei Density Features</h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="Digital">
+                                <br/>
+                                <img src="img/cervival.jpeg" class="float-right" alt="cervicall" width="70%">
+                                <p>
+                                    According to the report from GLOBOCAN 2018, 311,000 out of 570,000 cervical cancer cases have resulted in death. In the low human development index category, cervical cancer is the second most common cancer after breast cancer. In such an important type of cancer, early diagnosis is very important. Cervical squamous epithelial lesions (SIL) are cancer precursor lesions and their diagnosis is important because they have a chance of treatment before cancer development. Most of the grading studies in the literature are based on individual analysis of cell morphometry, which requires high computation time for optical zoom × 20 or × 40. In addition, pathologists can make different decisions for different cancer tissues and need an objective confirmation. From this point of view, we present two statistical properties extraction methods for the classification of hematoxylin and eosin-stained cervical tissues: Local Histogram Features (LHF) and Nuclei Density Features (NDF). Our method is based on dividing the tissues into basal, central and upper segments and using the histograms of each segment as a feature. As a similarity measurement, symmetric Kullback-Leibler metric is planned to be used among LHF feature vectors.
+                                    <br>
+                                </p>
+
+                            </section>
+
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                
+                <section id="Hyperspectral">
+                    <div class="page-header">
+                        <h3>Hyperspectral Data Analysis / Compression</h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="Hyperspectral">
+                                <img src="img/hyperspectral.png" class="float-right" alt="Smoke" width="70%">
+                                <p>
+                                    We develop algorithms to compress hyperspectral images using tools such as discrete wavelet transforms and graph signal processing.
+                                    Hyperspectral images are images volumetric images with composed of a continuous  bands with diferent wavelengths. In our research, we have developed ways to comress the images using different techniques such as appying different vavelets with lookup tables and graph singal processing.
+                                    <br>
+                                    <br>
+                                    <a href="pdf/hyperspectral.pdf" target="_blank">Our poster on hyperspectral image compression.</a>
+                                    <br>
+                                    <br>
+                                    <a href="pdf/h264.pdf" target="_blank">Our poster on smoke detection from H264 compressed videos.</a>
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                
+                 <section id="Hyperspectral">
+                    <div class="page-header">
+                        <h3>Continual Learning</h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="learning">
+                                <img src="img/clearning.png" class="float-right" alt="learning" width="70%">
+                                <p>
+                                   Artificial Neural Networks are addressing major problems of computer vision, natural language processing and data science in the last decade with increasing computational power and amount of data. Despite its popularity and success, when presented with a sequence of tasks with only having access to current task's data, neural networks fail to preserve its performance on previuosly learned tasks. This problem is called catastrophic forgetting and one of the biggest obstacle on the way of artificial general intelligence. 
+                                The purpose of continual learning is to be able to learn a sequence of tasks without suffering from catastrophic forgetting while improving forward and backward transfer across tasks.
+
+                                    
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                
+                  <section id="super">
+                    <div class="page-header">
+                        <h3>Image Super Resolution</h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="super">
+                                
+                                <p>
+
+                            Obtaining high resolution (HR) image from  the low resolution (LR) image is the goal of single image super resolution (SISR). One of crucial points is the difficulty of finding missing high frequency details. Second is how  LR images and HR images correspond to each other. Developing a patch based deep learning super resolution method is the aim of this project.                                
+
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                
+                
+                <section id="compression">
+                    <div class="page-header">
+                        <h3>Model Compression</h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="super">
+                                
+                                <p>
+
+                          Deep learning methods outperform traditional methods on problems of computer vision field. However, these methods require high computational cost, process time and memory, since they consist of large numbers of parameters. Using these methods is impossible on devices with low-budget and real-time applications. Hence, model compression has become an emerging topic, which aims decreasing the costs while achieving the least loss of performance. In this scope, we are trying to develop novel model compression methods and examine them both theoretically and practically.
+                         
+
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span5">
+                    <h3>Contact Information</h3>
+                    <p><b>Office Hours: </b>Monday-Friday (8.00am - 5.00pm)</p>
+                    <p><b>Phone: </b>+90-212-2857392</p>
+                    <a href="mailto:spacing@itu.edu.tr,toreyin@itu.edu.tr" >Email Us</a>
+                </div>
+                <div class="span2">
+                    <a href="index.html"><img src="images/Resimnew.png" alt="research-lab-logo" /></a>
+                </div>
+                <div class="span5">
+                    <h3>Address</h3>
+                    <p>Sp4cing Research Group
+                        <br> İTÜ Ayazağa Kampüsü
+                        <br> Sariyer, Istanbul
+                        <br> Turkey 34467
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navi");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            };
+        </script>
+</body>
+
+</html>
